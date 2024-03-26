@@ -1,5 +1,13 @@
+import { Dashboard } from "./components/dashboard";
+import { Sidebar } from "./components/sidebar";
+
 const App = () => {
-	return <></>;
+	return (
+		<div className="w-full h-dvh flex">
+			<Sidebar />
+			<Dashboard />
+		</div>
+	);
 };
 
 export default App;
