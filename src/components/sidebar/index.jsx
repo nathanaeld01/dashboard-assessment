@@ -17,32 +17,32 @@ export const Sidebar = () => {
 			<nav className="nav">
 				<SidebarLogo className="size-11 mb-6" />
 				<div className="nav-wrap">
-					<SidebarItem active>
-						<HomeIcon className="nav-icon" />
+					<SidebarItem variant="primary" active>
+						<HomeIcon />
 					</SidebarItem>
-					<SidebarItem>
-						<BarChartIcon className="nav-icon" />
+					<SidebarItem variant="primary">
+						<BarChartIcon />
 					</SidebarItem>
-					<SidebarItem>
-						<LayerIcon className="nav-icon" />
+					<SidebarItem variant="primary">
+						<LayerIcon />
 					</SidebarItem>
-					<SidebarItem>
-						<CheckedIcon className="nav-icon" />
+					<SidebarItem variant="primary">
+						<CheckedIcon />
 					</SidebarItem>
-					<SidebarItem>
-						<PieChartIcon className="nav-icon" />
+					<SidebarItem variant="primary">
+						<PieChartIcon />
 					</SidebarItem>
-					<SidebarItem>
-						<TeamIcon className="nav-icon" />
+					<SidebarItem variant="primary">
+						<TeamIcon />
 					</SidebarItem>
 				</div>
 			</nav>
 			<div className="nav">
 				<div className="nav-wrap">
-					<SidebarItem>
+					<SidebarItem variant="primary" className="text-grey-300">
 						<ProfileIcon className="nav-icon !stroke-primary-300" />
 					</SidebarItem>
-					<SidebarItem>
+					<SidebarItem variant="primary" className="text-grey-300">
 						<SettingIcon className="nav-icon !stroke-primary-300" />
 					</SidebarItem>
 				</div>
