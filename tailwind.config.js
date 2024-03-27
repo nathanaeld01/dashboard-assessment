@@ -17,19 +17,26 @@ module.exports = {
 				950: "#1A1E45",
 			},
 			grey: {
+				50: "#F9FAFB",
 				100: "#F2F4F7",
 				200: "#EAECF0",
 				300: "#D5D9E3",
 				400: "#98A2B3",
 				500: "#9CA3AF",
 				600: "#475467",
+				700: "#344054",
+				800: "#1D2939",
 				900: "#101828",
+				950: "#0C111D",
 			},
 			success: {
 				500: "#17B26A",
 			},
 			border: "#EAECF0",
-			shadow: "#9E77ED",
+			shadow: {
+				primary: "#9E77ED",
+				grey: "#667085",
+			},
 			white: "#ffffff",
 			black: "#000000",
 			transparent: "transparent",
@@ -50,6 +57,12 @@ module.exports = {
 			},
 			fontFamily: {
 				inter: "'Inter', sans-serif",
+			},
+			padding: {
+				4.5: "1.125rem",
+			},
+			stroke: {
+				current: "currentColor",
 			},
 		},
 	},

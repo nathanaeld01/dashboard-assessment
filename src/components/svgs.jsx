@@ -3,10 +3,12 @@ import { cn } from "../lib/utils";
 const CheckedIcon = ({ className }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className={cn(className)}
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
 		fill="none"
 		viewBox="0 0 22 22"
 	>
@@ -17,10 +19,12 @@ const CheckedIcon = ({ className }) => (
 const HomeIcon = ({ className }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className={cn(className)}
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
 		fill="none"
 		viewBox="0 0 20 21"
 	>
@@ -31,10 +35,12 @@ const HomeIcon = ({ className }) => (
 const BarChartIcon = ({ className }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className={cn(className)}
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
 		fill="none"
 		viewBox="0 0 20 20"
 	>
@@ -45,10 +51,12 @@ const BarChartIcon = ({ className }) => (
 const LayerIcon = ({ className }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className={cn(className)}
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
 		fill="none"
 		viewBox="0 0 22 22"
 	>
@@ -59,10 +67,12 @@ const LayerIcon = ({ className }) => (
 const TeamIcon = ({ className }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className={cn(className)}
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
 		fill="none"
 		viewBox="0 0 22 20"
 	>
@@ -73,10 +83,12 @@ const TeamIcon = ({ className }) => (
 const PieChartIcon = ({ className }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className={cn(className)}
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
 		fill="none"
 		viewBox="0 0 22 22"
 	>
@@ -87,10 +99,12 @@ const PieChartIcon = ({ className }) => (
 const ProfileIcon = ({ className }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className={cn(className)}
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
 		fill="none"
 		viewBox="0 0 22 22"
 	>
@@ -101,10 +115,12 @@ const ProfileIcon = ({ className }) => (
 const SettingIcon = ({ className }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className={cn(className)}
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
 		fill="none"
 		viewBox="0 0 22 22"
 	>
@@ -112,13 +128,64 @@ const SettingIcon = ({ className }) => (
 	</svg>
 );
 
+const SearchIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+		viewBox="0 0 18 18"
+	>
+		<path d="m16.5 16.5-2.92-2.92m2.09-5a7.08 7.08 0 1 1-14.17 0 7.08 7.08 0 0 1 14.17 0Z" />
+	</svg>
+);
+
+const ConfigureIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+		viewBox="0 0 18 18"
+	>
+		<path d="M11.542 6.5H3.583a2.083 2.083 0 0 1 0-4.167h7.96M6.457 15.667h7.959a2.083 2.083 0 0 0 0-4.167h-7.96M1.5 13.583a2.917 2.917 0 1 0 5.833 0 2.917 2.917 0 0 0-5.833 0Zm15-9.166a2.917 2.917 0 1 1-5.833 0 2.917 2.917 0 0 1 5.833 0Z" />
+	</svg>
+);
+
+const DownloadCloudIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+		viewBox="0 0 20 18"
+	>
+		<path d="M6.67 13.17 10 16.5m0 0 3.33-3.33M10 16.5V9m6.67 3.95a4.58 4.58 0 0 0-2.92-8.12.52.52 0 0 1-.44-.25 6.25 6.25 0 1 0-9.82 7.58" />
+	</svg>
+);
+
 export {
 	BarChartIcon,
 	CheckedIcon,
+	ConfigureIcon,
+	DownloadCloudIcon,
 	HomeIcon,
 	LayerIcon,
 	PieChartIcon,
 	ProfileIcon,
+	SearchIcon,
 	SettingIcon,
 	TeamIcon,
 };
