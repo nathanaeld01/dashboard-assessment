@@ -7,5 +7,35 @@
 }
 
 body {
-    @apply w-full h-dvh bg-primary;
+    @apply w-full h-dvh bg-primary-800;
+}
+
+/*** Nav ***/
+.nav {
+    @apply flex flex-col items-center;
+}
+
+.nav > .nav-wrap {
+    @apply flex flex-col gap-2;
+}
+
+/*** Nav Item ***/
+.nav-item {
+    @apply size-12 flex bg-primary-800 justify-center items-center rounded-md aspect-square cursor-pointer hover:bg-primary-600 focus:ring-4 focus:ring-shadow transition-colors duration-300;
+}
+
+.nav-item.active {
+    @apply bg-primary-600;
+}
+
+.nav-item > .nav-icon {
+    @apply size-5 transition-colors duration-150 stroke-primary-200;
+}
+
+.nav-item.active > .nav-icon {
+    @apply stroke-white;
+}
+
+.nav-item:not(.active):hover > .nav-icon {
+    @apply stroke-white;
 }

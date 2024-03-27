@@ -6,11 +6,14 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"a11y": {
+				"noSvgWithoutTitle": "off"
+			}
 		}
 	},
-    "formatter": {
-        "indentWidth": 4,
-        "indentStyle": "tab"
-    }
+	"formatter": {
+		"indentWidth": 4,
+		"indentStyle": "tab"
+	}
 }

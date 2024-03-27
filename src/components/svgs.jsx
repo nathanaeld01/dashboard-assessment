@@ -1,0 +1,124 @@
+import { cn } from "../lib/utils";
+
+const CheckedIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(className)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		fill="none"
+		viewBox="0 0 22 22"
+	>
+		<path d="m5 14 2 2 4.5-4.5M7 7V4.2c0-1.1 0-1.7.2-2.1a2 2 0 0 1 .9-.9C8.5 1 9 1 10.2 1h7.6c1.1 0 1.7 0 2.1.2a2 2 0 0 1 .9.9c.2.4.2 1 .2 2.1v7.6c0 1.1 0 1.7-.2 2.1a2 2 0 0 1-.9.9c-.4.2-1 .2-2.1.2H15M4.2 21h7.6c1.1 0 1.7 0 2.1-.2a2 2 0 0 0 .9-.9c.2-.4.2-1 .2-2.1v-7.6c0-1.1 0-1.7-.2-2.1a2 2 0 0 0-.9-.9c-.4-.2-1-.2-2.1-.2H4.2c-1.1 0-1.7 0-2.1.2a2 2 0 0 0-.9.9C1 8.5 1 9 1 10.2v7.6c0 1.1 0 1.7.2 2.1a2 2 0 0 0 .9.9c.4.2 1 .2 2.1.2Z" />
+	</svg>
+);
+
+const HomeIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(className)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		fill="none"
+		viewBox="0 0 20 21"
+	>
+		<path d="M6 16h8M9 1.8 2.2 7l-.8.8a2 2 0 0 0-.3.6L1 9.6v7.2c0 1.1 0 1.7.2 2.1a2 2 0 0 0 .9.9c.4.2 1 .2 2.1.2h11.6c1.1 0 1.7 0 2.1-.2a2 2 0 0 0 .9-.9c.2-.4.2-1 .2-2.1V8.4a2 2 0 0 0-.4-.6l-.8-.8L11 1.8l-.7-.5a1 1 0 0 0-.6 0c-.2 0-.3.2-.7.5Z" />
+	</svg>
+);
+
+const BarChartIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(className)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		fill="none"
+		viewBox="0 0 20 20"
+	>
+		<path d="M6 13v2m4-6v6m4-10v10m-8.2 4h8.4c1.7 0 2.5 0 3.2-.3a3 3 0 0 0 1.3-1.3c.3-.7.3-1.5.3-3.2V5.8c0-1.7 0-2.5-.3-3.2a3 3 0 0 0-1.3-1.3c-.7-.3-1.5-.3-3.2-.3H5.8c-1.7 0-2.5 0-3.2.3a3 3 0 0 0-1.3 1.3C1 3.3 1 4.1 1 5.8v8.4c0 1.7 0 2.5.3 3.2a3 3 0 0 0 1.3 1.3c.7.3 1.5.3 3.2.3Z" />
+	</svg>
+);
+
+const LayerIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(className)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		fill="none"
+		viewBox="0 0 22 22"
+	>
+		<path d="m1 11 9.6 4.8.3.1h.5L21 11M1 16l9.6 4.8.3.1h.5L21 16M1 6l9.6-4.8.3-.1a.5.5 0 0 1 .2 0h.3L21 6l-9.6 4.8a1 1 0 0 1-.3.1.5.5 0 0 1-.2 0 1 1 0 0 1-.3 0L1 6Z" />
+	</svg>
+);
+
+const TeamIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(className)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		fill="none"
+		viewBox="0 0 22 20"
+	>
+		<path d="M21 19v-2a4 4 0 0 0-3-3.9M14.5 1.3a4 4 0 0 1 0 7.4M16 19c0-1.9 0-2.8-.3-3.5a4 4 0 0 0-2.2-2.2C12.8 13 12 13 10 13H7c-1.9 0-2.8 0-3.5.3a4 4 0 0 0-2.2 2.2C1 16.2 1 17 1 19M12.5 5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+	</svg>
+);
+
+const PieChartIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(className)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		fill="none"
+		viewBox="0 0 22 22"
+	>
+		<path d="M11 1a10 10 0 0 1 10 10M11 1v10m0-10a10 10 0 1 0 10 10M11 1a10 10 0 0 1 10 10m0 0H11m10 0a10 10 0 0 1-4.1 8L11 11" />
+	</svg>
+);
+
+const ProfileIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(className)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		fill="none"
+		viewBox="0 0 22 22"
+	>
+		<path d="M8.1 8.1 4 4m0 14.2 4.3-4.3m5.7 0 4.2 4.3m0-14.2-4.3 4.3M21 11a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-6 0a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+	</svg>
+);
+
+const SettingIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(className)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		stroke-width="2"
+		fill="none"
+		viewBox="0 0 22 22"
+	>
+		<path d="M11 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z M17.727 13.727a1.5 1.5 0 0 0 .3 1.655l.055.054a1.816 1.816 0 0 1 0 2.573 1.818 1.818 0 0 1-2.573 0l-.055-.055a1.5 1.5 0 0 0-1.654-.3 1.5 1.5 0 0 0-.91 1.373v.155a1.818 1.818 0 1 1-3.635 0V19.1a1.5 1.5 0 0 0-.982-1.373 1.5 1.5 0 0 0-1.655.3l-.054.055a1.818 1.818 0 0 1-3.106-1.287 1.818 1.818 0 0 1 .533-1.286l.054-.055a1.5 1.5 0 0 0 .3-1.654 1.5 1.5 0 0 0-1.372-.91h-.155a1.818 1.818 0 1 1 0-3.635H2.9a1.5 1.5 0 0 0 1.373-.982 1.5 1.5 0 0 0-.3-1.655l-.055-.054A1.818 1.818 0 1 1 6.491 3.99l.054.054a1.5 1.5 0 0 0 1.655.3h.073a1.5 1.5 0 0 0 .909-1.372v-.155a1.818 1.818 0 0 1 3.636 0V2.9a1.499 1.499 0 0 0 .91 1.373 1.5 1.5 0 0 0 1.654-.3l.054-.055a1.817 1.817 0 0 1 2.573 0 1.819 1.819 0 0 1 0 2.573l-.055.054a1.5 1.5 0 0 0-.3 1.655v.073a1.5 1.5 0 0 0 1.373.909h.155a1.818 1.818 0 0 1 0 3.636H19.1a1.499 1.499 0 0 0-1.373.91Z" />
+	</svg>
+);
+
+export {
+	BarChartIcon,
+	CheckedIcon,
+	HomeIcon,
+	LayerIcon,
+	PieChartIcon,
+	ProfileIcon,
+	SettingIcon,
+	TeamIcon,
+};
