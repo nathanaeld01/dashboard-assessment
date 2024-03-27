@@ -13,7 +13,7 @@ import { SidebarLogo } from "./logo";
 
 export const Sidebar = () => {
 	return (
-		<aside className="w-sidebar h-full flex py-8 flex-col justify-between">
+		<aside className="w-20.5 h-full flex py-8 flex-col justify-between">
 			<nav className="nav">
 				<SidebarLogo className="size-11 mb-6" />
 				<div className="nav-wrap">

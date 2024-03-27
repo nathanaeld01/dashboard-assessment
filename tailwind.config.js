@@ -36,13 +36,20 @@ module.exports = {
 		},
 		extend: {
 			width: {
-				sidebar: "5.125rem",
+				20.5: "5.125rem",
+				15: "3.75rem",
+			},
+			height: {
+				15: "3.75rem",
 			},
 			borderRadius: {
 				"4xl": "2rem",
 			},
 			boxShadow: {
 				active: "0 0 0 4px",
+			},
+			fontFamily: {
+				inter: "'Inter', sans-serif",
 			},
 		},
 	},
