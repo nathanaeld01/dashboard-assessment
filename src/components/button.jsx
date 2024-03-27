@@ -3,14 +3,15 @@ import { cloneElement } from "react";
 import { cn } from "../lib/utils";
 
 const buttonStyles = cva(
-	"inline-flex font-semibold justify-center items-center rounded-md disabled:bg-transparent disabled:text-grey-300 transition-colors duration-200",
+	"inline-flex font-semibold justify-center items-center rounded-md transition-colors duration-200 disabled:focus:ring-0",
 	{
 		variants: {
 			variant: {
-				primary: "",
+				primary:
+					"text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-shadow-violet disabled:text-white disabled:bg-primary-200 disabled:hover:bg-primary-200 disabled:focus:ring-0",
 				secondary:
-					"text-grey-700 border border-grey-300 hover:bg-grey-50 hover:text-grey-800 disabled:border-grey-200 focus:ring-4 focus:ring-grey-100",
-				ghost: "text-grey-700 hover:enabled:bg-grey-50 hover:enabled:text-grey-800",
+					"text-grey-700 border border-grey-300 hover:bg-grey-50 hover:text-grey-800 focus:ring-4 focus:ring-grey-100 disabled:border-grey-200 disabled:bg-white disabled:text-grey-300 disabled:hover:bg-white disabled:hover:text-grey-300 ",
+				ghost: "text-grey-700 hover:enabled:bg-grey-50 hover:enabled:text-grey-800 disabled:bg-transparent disabled:text-grey-300",
 			},
 			size: {
 				sm: "h-9 px-3.5 py-2 text-sm",
@@ -22,8 +23,8 @@ const buttonStyles = cva(
 			},
 			icon: {
 				default: "",
-				trailing: "flex-row-reverse gap-4",
-				leading: "flex-row gap-4",
+				trailing: "flex-row-reverse gap-2",
+				leading: "flex-row gap-2",
 				only: "",
 			},
 		},

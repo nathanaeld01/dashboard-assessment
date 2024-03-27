@@ -9,7 +9,7 @@ const navItemStyles = cva(
 				default:
 					"text-primary-200 bg-white hover:bg-grey-50 focus:ring-grey-100",
 				primary:
-					"text-primary-200 bg-primary-800 hover:bg-primary-600 focus:ring-shadow-primary",
+					"text-primary-200 bg-primary-800 hover:bg-primary-600 focus:ring-shadow-purple",
 				grey: "text-primary-200 bg-grey-950 hover:bg-grey-800 focus:ring-shadow-grey",
 			},
 			size: {
