@@ -3,9 +3,9 @@ import { useState } from "react";
 import { cn } from "../../lib/utils";
 import { AvgOrderCard } from "../dashcards/avg-order";
 import { MarketTrends } from "../dashcards/market-trends";
+import { OpportunityCard } from "../dashcards/opportunity";
 import { OrdersCard } from "../dashcards/orders";
 import { RevenueCard } from "../dashcards/revenue";
-import { Card, CardHeader, CardTitle } from "../ui/card";
 import { TabContent, TabItem, Tabs } from "../ui/tabs";
 import { DashboardHeader } from "./header";
 
@@ -50,13 +50,7 @@ export const Dashboard = () => {
 							</div>
 							<div className="col-wrap">
 								<MarketTrends />
-								<Card className="col-span-1">
-									<CardHeader bordered>
-										<CardTitle>
-											Industry Opportunities
-										</CardTitle>
-									</CardHeader>
-								</Card>
+								<OpportunityCard />
 							</div>
 						</div>
 					</TabContent>
