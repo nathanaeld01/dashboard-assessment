@@ -1,33 +1,51 @@
-import { Button } from "../button";
-import { ConfigureIcon, DownloadCloudIcon, SearchIcon } from "../svgs";
+import { useState } from "react";
+
+import { cn } from "../../lib/utils";
+import { TabContent, TabItem, Tabs } from "../ui/tabs";
+import { DashboardHeader } from "./header";
+import { DashboardMetrics } from "./metrics";
 
 export const Dashboard = () => {
+	const [currentTab, setCurrentTab] = useState("analysis");
+
+	const tabItems = [
+		{ index: "analysis", name: "Market Analysis", default: true },
+		{ index: "perform", name: "Performance", default: false },
+	];
+
 	return (
 		<div className="grow h-full pt-3 pl-3">
 			<main className="w-full h-full bg-background rounded-tl-4xl p-8">
-				<div className="h-15 border-b border-b-grey-300">
-					<header className="flex justify-between items-center">
-						<h1 className="text-2xl text-grey-900 font-semibold">
-							Dashboard
-						</h1>
-						<div className="flex gap-4">
-							<Button variant="ghost" icon={<SearchIcon />} />
-							<Button
-								variant="primary"
-								leadingIcon={<ConfigureIcon />}
+				<DashboardHeader />
+				<Tabs onChange={setCurrentTab}>
+					<div className="mt-1 mb-8 flex border-b-2 border-b-[#E5E7EB]">
+						{tabItems.map((item) => (
+							<TabItem
+								className={cn(
+									"relative py-3.5 px-4.5",
+									currentTab === item.index &&
+										"font-semibold",
+								)}
+								defaultTab={item.default}
+								index={item.index}
+								key={item.index}
 							>
-								Customize
-							</Button>
-							<Button
-								disabled
-								variant="secondary"
-								leadingIcon={<DownloadCloudIcon />}
-							>
-								Export
-							</Button>
-						</div>
-					</header>
-				</div>
+								{item.name}
+								{currentTab === item.index && (
+									<span className="absolute -bottom-px left-0 z-0 w-full h-[2px] bg-[#0082CA]" />
+								)}
+							</TabItem>
+						))}
+					</div>
+					<div className="overflow-hidden">
+						<TabContent index="analysis">
+							<DashboardMetrics />
+						</TabContent>
+						<TabContent index="perform">
+							<div>Performance</div>
+						</TabContent>
+					</div>
+				</Tabs>
 			</main>
 		</div>
 	);

@@ -31,6 +31,7 @@ module.exports = {
 			},
 			success: {
 				500: "#17B26A",
+				700: "#067647",
 			},
 			border: "#EAECF0",
 			background: "#FDFDFD",
