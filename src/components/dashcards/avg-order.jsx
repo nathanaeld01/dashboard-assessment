@@ -1,4 +1,4 @@
-import { RevenueChart } from "../charts";
+import { RevenueChart } from "../charts/revenue";
 import { DotsVerticalIcon } from "../icons";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Change, ChangeIcon, ChnageText } from "../ui/change";

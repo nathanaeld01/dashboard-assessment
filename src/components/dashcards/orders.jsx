@@ -1,4 +1,4 @@
-import { OrderChart } from "../charts";
+import { OrderChart } from "../charts/order";
 import { DotsVerticalIcon } from "../icons";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Change, ChangeIcon, ChnageText } from "../ui/change";

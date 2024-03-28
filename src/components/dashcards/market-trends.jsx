@@ -1,4 +1,4 @@
-import { MarketTrendsChart } from "../charts";
+import { MarketTrendsChart } from "../charts/market-trend";
 import { ButtonGroup, ButtonGroupItem } from "../ui/button-group";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 

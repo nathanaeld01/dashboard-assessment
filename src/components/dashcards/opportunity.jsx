@@ -1,4 +1,4 @@
-import { OpportunityChart } from "../charts";
+import { OpportunityChart } from "../charts/opportunity";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 export const OpportunityCard = () => (
