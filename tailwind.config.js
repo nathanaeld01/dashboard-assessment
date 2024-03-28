@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	mode: "jit",
 	content: ["./src/**/*.{html,js,jsx}"],
 	theme: {
 		colors: {
@@ -57,6 +58,7 @@ module.exports = {
 			},
 			boxShadow: {
 				active: "0 0 0 4px",
+				card: "0 1px 2px 0",
 			},
 			fontFamily: {
 				inter: "'Inter', sans-serif",

@@ -37,14 +37,15 @@ export const Dashboard = () => {
 							</TabItem>
 						))}
 					</div>
-					<div className="overflow-hidden">
-						<TabContent index="analysis">
-							<DashboardMetrics />
-						</TabContent>
-						<TabContent index="perform">
-							<div>Performance</div>
-						</TabContent>
-					</div>
+					<TabContent
+						className="flex flex-col gap-4"
+						index="analysis"
+					>
+						<DashboardMetrics />
+					</TabContent>
+					<TabContent index="perform">
+						<div>Performance</div>
+					</TabContent>
 				</Tabs>
 			</main>
 		</div>
