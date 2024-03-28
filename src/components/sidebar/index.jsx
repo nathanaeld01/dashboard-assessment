@@ -7,7 +7,7 @@ import {
 	ProfileIcon,
 	SettingIcon,
 	TeamIcon,
-} from "../svgs";
+} from "../icons";
 import { SidebarItem } from "./item";
 import { SidebarLogo } from "./logo";
 
