@@ -20,3 +20,25 @@ body {
 .nav > .nav-wrap {
     @apply flex flex-col gap-2;
 }
+
+/*** Card ***/
+.card {
+    @apply bg-white text-grey-900 border border-grey-200 rounded-xl shadow-card shadow-grey-900/5
+}
+
+.card > .card-header {
+    @apply flex p-4 justify-between items-center;
+}
+
+.card > .card-content {
+    @apply p-4 pt-0;
+}
+
+.card > .card-header > .card-title {
+    @apply text-base font-semibold;
+}
+
+/*** Metrics ***/
+.metrics-wrap {
+    @apply flex gap-4;
+}
