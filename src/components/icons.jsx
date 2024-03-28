@@ -224,7 +224,24 @@ const TrendUpIcon = ({ className }) => (
 	</svg>
 );
 
+const ArrowRightIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+		viewBox="0 0 24 24"
+	>
+		<path d="M16.2 13H4v-2h12.2l-5.6-5.6L12 4l8 8-8 8-1.4-1.4 5.6-5.6Z" />
+	</svg>
+);
+
 export {
+	ArrowRightIcon,
 	ArrowUpIcon,
 	BarChartIcon,
 	CheckedIcon,

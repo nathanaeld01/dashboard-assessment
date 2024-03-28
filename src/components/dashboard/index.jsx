@@ -2,10 +2,12 @@ import { useState } from "react";
 
 import { cn } from "../../lib/utils";
 import { AvgOrderCard } from "../dashcards/avg-order";
+import { CampaignCard } from "../dashcards/campaign";
 import { MarketTrends } from "../dashcards/market-trends";
 import { OpportunityCard } from "../dashcards/opportunity";
 import { OrdersCard } from "../dashcards/orders";
 import { RevenueCard } from "../dashcards/revenue";
+import { TrendingCard } from "../dashcards/trending";
 import { TabContent, TabItem, Tabs } from "../ui/tabs";
 import { DashboardHeader } from "./header";
 
@@ -51,6 +53,10 @@ export const Dashboard = () => {
 							<div className="col-wrap">
 								<MarketTrends />
 								<OpportunityCard />
+							</div>
+							<div className="col-wrap">
+								<TrendingCard />
+								<CampaignCard />
 							</div>
 						</div>
 					</TabContent>
