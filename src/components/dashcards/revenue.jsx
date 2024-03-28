@@ -1,7 +1,7 @@
 import { RevenueChart } from "../charts/revenue";
 import { DotsVerticalIcon } from "../icons";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Change, ChangeIcon, ChnageText } from "../ui/change";
+import { Change, ChangeIcon, ChangeText } from "../ui/change";
 
 export const RevenueCard = () => (
 	<Card className="col-span-4">
@@ -14,7 +14,7 @@ export const RevenueCard = () => (
 		<CardContent className="flex">
 			<Change className="flex-[2]" title="$1280">
 				<ChangeIcon type="changeUp">15%</ChangeIcon>
-				<ChnageText>last mth</ChnageText>
+				<ChangeText>last mth</ChangeText>
 			</Change>
 			<RevenueChart />
 		</CardContent>

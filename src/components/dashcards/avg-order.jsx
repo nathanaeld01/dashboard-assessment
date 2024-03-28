@@ -1,7 +1,7 @@
 import { RevenueChart } from "../charts/revenue";
 import { DotsVerticalIcon } from "../icons";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Change, ChangeIcon, ChnageText } from "../ui/change";
+import { Change, ChangeIcon, ChangeText } from "../ui/change";
 
 export const AvgOrderCard = () => (
 	<Card className="col-span-4">
@@ -14,7 +14,7 @@ export const AvgOrderCard = () => (
 		<CardContent className="flex justify-between items-center">
 			<Change className="flex-[2]" title="$91.42">
 				<ChangeIcon type="changeUp">20%</ChangeIcon>
-				<ChnageText>last mth</ChnageText>
+				<ChangeText>last mth</ChangeText>
 			</Change>
 			<RevenueChart />
 		</CardContent>

@@ -21,7 +21,7 @@ export const OpportunityChart = () => (
 			d="M180.8.2A166.4 166.4 0 0 0 112 11.6c-22 8.6-42 21.8-58.8 38.7a181 181 0 0 0-39.5 59.8A187.4 187.4 0 0 0 0 181.3l38.7-.1c0-19 3.5-37.8 10.6-55.3S66.8 92.6 80 79.4a133.6 133.6 0 0 1 45.7-30c17-6.7 35.1-9.7 53.3-8.9L180.8.2Z"
 		/>
 		<path
-			fill="url(#b)"
+			fill="url(#opportunity-gradient)"
 			d="m180.1 56-15.2 122a7.2 7.5 0 0 0 0 1l-.1.3a7.2 7.5 0 0 0 0 .2 7.2 7.5 0 0 0 7.2 7.5 7.2 7.5 0 0 0 7.1-7l1-124z"
 		/>
 		<path
@@ -31,7 +31,13 @@ export const OpportunityChart = () => (
 			clip-rule="evenodd"
 		/>
 		<defs>
-			<linearGradient id="b" x1="0%" x2="0%" y1="0%" y2="100%">
+			<linearGradient
+				id="opportunity-gradient"
+				x1="0%"
+				x2="0%"
+				y1="0%"
+				y2="100%"
+			>
 				<stop offset="0%" stop-color="#d9d9d9" />
 				<stop offset="100%" stop-color="#3a4956" />
 			</linearGradient>

@@ -14,15 +14,22 @@ const Change = ({ title, className, children }) => (
 	</div>
 );
 
-const ChangeIcon = ({ type, children }) => {
+const ChangeIcon = ({ type, className, children }) => {
 	return (
-		<div className="flex text-success-500 items-center gap-1">
+		<div
+			className={cn(
+				"flex text-success-500 items-center gap-1",
+				className,
+			)}
+		>
 			{cloneElement(iconType[type], { className: "h-5" })}
-			<span className="text-success-700">{children}</span>
+			<span className="font-semibold text-sm text-success-700">
+				{children}
+			</span>
 		</div>
 	);
 };
 
-const ChnageText = ({ children }) => <div className="ml-2">{children}</div>;
+const ChangeText = ({ children }) => <div className="ml-2">{children}</div>;
 
-export { Change, ChangeIcon, ChnageText };
+export { Change, ChangeIcon, ChangeText };

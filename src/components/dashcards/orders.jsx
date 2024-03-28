@@ -1,7 +1,7 @@
 import { OrderChart } from "../charts/order";
 import { DotsVerticalIcon } from "../icons";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Change, ChangeIcon, ChnageText } from "../ui/change";
+import { Change, ChangeIcon, ChangeText } from "../ui/change";
 
 export const OrdersCard = () => (
 	<Card className="col-span-4">
@@ -14,7 +14,7 @@ export const OrdersCard = () => (
 		<CardContent className="flex">
 			<Change className="flex-[2]" title="14">
 				<ChangeIcon type="trendUp">10%</ChangeIcon>
-				<ChnageText>last mth</ChnageText>
+				<ChangeText>last mth</ChangeText>
 			</Change>
 			<OrderChart />
 		</CardContent>

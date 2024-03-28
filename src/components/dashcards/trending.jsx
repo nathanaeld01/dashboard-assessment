@@ -12,7 +12,7 @@ export const TrendingCard = () => (
 				<DotsVerticalIcon className="size-4 m-auto stroke-grey-400" />
 			</button>
 		</CardHeader>
-		<CardContent className="!pt-4 flex">
+		<CardContent className="pt-4 flex">
 			<div className="size-72">
 				<TrendingChart />
 			</div>
