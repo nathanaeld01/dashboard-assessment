@@ -35,10 +35,14 @@ body {
 }
 
 .card > .card-header > .card-title {
-    @apply text-base font-semibold;
+    @apply flex flex-col gap-1;
 }
 
-/*** Metrics ***/
-.metrics-wrap {
-    @apply flex gap-4;
+/*** Wraps ***/
+.row-wrap {
+    @apply grid auto-cols-auto gap-4;
+}
+
+.col-wrap {
+    @apply grid grid-cols-3 gap-4;
 }

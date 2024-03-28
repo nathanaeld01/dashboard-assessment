@@ -46,12 +46,11 @@ module.exports = {
 			transparent: "transparent",
 		},
 		extend: {
-			width: {
+			spacing: {
+				4.5: "1.125rem",
+				9.5: "2.375rem",
+				15: "3.75rem",
 				20.5: "5.125rem",
-				15: "3.75rem",
-			},
-			height: {
-				15: "3.75rem",
 			},
 			borderRadius: {
 				"4xl": "2rem",
@@ -62,9 +61,6 @@ module.exports = {
 			},
 			fontFamily: {
 				inter: "'Inter', sans-serif",
-			},
-			padding: {
-				4.5: "1.125rem",
 			},
 			stroke: {
 				current: "currentColor",

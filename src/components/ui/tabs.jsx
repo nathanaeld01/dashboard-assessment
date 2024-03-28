@@ -40,7 +40,7 @@ const TabContent = ({ index, className, children }) => {
 
 	return (
 		<div
-			className={cn(className, activeTab === index ? "block" : "hidden")}
+			className={cn(activeTab === index ? "block" : "hidden", className)}
 		>
 			{children}
 		</div>
