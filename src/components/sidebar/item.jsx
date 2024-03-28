@@ -45,10 +45,18 @@ const navItemStyles = cva(
 	},
 );
 
-export const SidebarItem = ({ active, variant, size, className, children }) => {
+export const SidebarItem = ({
+	active,
+	variant,
+	size,
+	className,
+	children,
+	...props
+}) => {
 	return (
 		<button
 			className={cn(navItemStyles({ variant, size, active }), className)}
+			{...props}
 			type="button"
 		>
 			{children}

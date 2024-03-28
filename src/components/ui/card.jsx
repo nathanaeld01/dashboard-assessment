@@ -3,7 +3,7 @@ import { cn } from "../../lib/utils";
 const Card = ({ className, children }) => (
 	<div
 		className={cn(
-			"bg-white text-grey-900 border border-grey-200 rounded-xl shadow-card shadow-grey-900/5",
+			"bg-white text-grey-900 border border-grey-200 rounded-xl shadow-card shadow-grey-900/10",
 			className,
 		)}
 	>
