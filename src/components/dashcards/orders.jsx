@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Change, ChangeIcon, ChnageText } from "../ui/change";
 
 export const OrdersCard = () => (
-	<Card className="col-span-1">
+	<Card className="col-span-4">
 		<CardHeader>
 			<CardTitle>Today's Orders</CardTitle>
 			<button type="button" className="relative size-5 flex">

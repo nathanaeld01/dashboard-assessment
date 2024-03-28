@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Change, ChangeIcon, ChnageText } from "../ui/change";
 
 export const AvgOrderCard = () => (
-	<Card className="col-span-1">
+	<Card className="col-span-4">
 		<CardHeader>
 			<CardTitle>Avg. Order Value</CardTitle>
 			<button type="button" className="relative size-5 flex">
