@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
 import { cloneElement } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 
 const buttonStyles = cva(
 	"inline-flex font-semibold justify-center items-center rounded-md transition-colors duration-200 disabled:focus:ring-0",

@@ -176,10 +176,60 @@ const DownloadCloudIcon = ({ className }) => (
 	</svg>
 );
 
+const DotsVerticalIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+		viewBox="0 0 4 16"
+	>
+		<path d="M2 8.83a.83.83 0 1 0 0-1.66.83.83 0 0 0 0 1.66ZM2 3a.83.83 0 1 0 0-1.67A.83.83 0 0 0 2 3Zm0 11.67A.83.83 0 1 0 2 13a.83.83 0 0 0 0 1.67Z" />
+	</svg>
+);
+
+const ArrowUpIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+		viewBox="0 0 14 14"
+	>
+		<path d="M7 12.83V1.17m0 0L1.17 7M7 1.17 12.83 7" />
+	</svg>
+);
+
+const TrendUpIcon = ({ className }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		className={cn(
+			"size-5 stroke-current stroke-2 transition-colors duration-200",
+			className,
+		)}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		fill="none"
+		viewBox="0 0 20 12"
+	>
+		<path d="M18.33 1.83 11.78 8.4c-.33.33-.5.5-.69.56a.83.83 0 0 1-.51 0c-.2-.06-.36-.23-.69-.56L7.61 6.11c-.33-.33-.5-.5-.69-.56a.83.83 0 0 0-.51 0c-.2.06-.36.23-.69.56l-4.05 4.06m16.66-8.34H12.5m5.83 0v5.84" />
+	</svg>
+);
+
 export {
+	ArrowUpIcon,
 	BarChartIcon,
 	CheckedIcon,
 	ConfigureIcon,
+	DotsVerticalIcon,
 	DownloadCloudIcon,
 	HomeIcon,
 	LayerIcon,
@@ -188,4 +238,5 @@ export {
 	SearchIcon,
 	SettingIcon,
 	TeamIcon,
+	TrendUpIcon,
 };
