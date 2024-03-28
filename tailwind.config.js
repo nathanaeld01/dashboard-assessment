@@ -51,6 +51,10 @@ module.exports = {
 				9.5: "2.375rem",
 				15: "3.75rem",
 				20.5: "5.125rem",
+				23.5: "5.875rem",
+			},
+			minHeight: {
+				container: "calc(100vh - 0.75rem)",
 			},
 			borderRadius: {
 				"4xl": "2rem",

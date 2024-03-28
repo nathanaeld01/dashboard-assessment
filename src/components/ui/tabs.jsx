@@ -7,7 +7,7 @@ const Tabs = ({ onChange, children }) => {
 	const [activeTab, setActiveTab] = useState("");
 
 	useLayoutEffect(() => {
-		onChange(activeTab);
+		if (onChange) onChange(activeTab);
 	}, [activeTab, onChange]);
 
 	return (
@@ -17,7 +17,7 @@ const Tabs = ({ onChange, children }) => {
 	);
 };
 
-const TabItem = ({ index, defaultTab, className, children }) => {
+const TabItem = ({ index, defaultTab, className, activeClasses, children }) => {
 	const { activeTab, setActiveTab } = useTab();
 
 	useLayoutEffect(() => {
@@ -27,7 +27,7 @@ const TabItem = ({ index, defaultTab, className, children }) => {
 	return (
 		<button
 			type="button"
-			className={cn(className, activeTab === index && "group active")}
+			className={cn(className, activeTab === index && activeClasses)}
 			onClick={() => setActiveTab(index)}
 		>
 			{children}

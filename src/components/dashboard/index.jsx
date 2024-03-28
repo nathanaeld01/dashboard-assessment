@@ -8,7 +8,7 @@ import { OpportunityCard } from "../dashcards/opportunity";
 import { OrdersCard } from "../dashcards/orders";
 import { RevenueCard } from "../dashcards/revenue";
 import { TrendingCard } from "../dashcards/trending";
-import { TabContent, TabItem, Tabs } from "../ui/tabs";
+import { TabItem, Tabs } from "../ui/tabs";
 import { DashboardHeader } from "./header";
 
 export const Dashboard = () => {
@@ -20,8 +20,8 @@ export const Dashboard = () => {
 	];
 
 	return (
-		<div className="max-w-[calc(100%-5.125rem)] w-full h-full ml-20.5 pt-3 pl-3">
-			<main className="w-full h-full bg-background rounded-tl-4xl p-8">
+		<div className="wrapper">
+			<main className="w-full min-h-container h-full bg-background rounded-tl-4xl p-8">
 				<DashboardHeader />
 				<Tabs onChange={setCurrentTab}>
 					<div className="mt-1 mb-8 flex border-b-2 border-b-[#E5E7EB]">
@@ -43,26 +43,21 @@ export const Dashboard = () => {
 							</TabItem>
 						))}
 					</div>
-					<TabContent index="analysis">
-						<div className="row-wrap">
-							<div className="col-wrap">
-								<RevenueCard />
-								<OrdersCard />
-								<AvgOrderCard />
-							</div>
-							<div className="col-wrap">
-								<MarketTrends />
-								<OpportunityCard />
-							</div>
-							<div className="col-wrap">
-								<TrendingCard />
-								<CampaignCard />
-							</div>
+					<div className="row-wrap">
+						<div className="col-wrap">
+							<RevenueCard />
+							<OrdersCard />
+							<AvgOrderCard />
 						</div>
-					</TabContent>
-					<TabContent index="perform">
-						<div>Performance</div>
-					</TabContent>
+						<div className="col-wrap">
+							<MarketTrends />
+							<OpportunityCard />
+						</div>
+						<div className="col-wrap">
+							<TrendingCard />
+							<CampaignCard />
+						</div>
+					</div>
 				</Tabs>
 			</main>
 		</div>

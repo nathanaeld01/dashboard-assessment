@@ -1,6 +1,7 @@
 import { MarketTrendsChart } from "../charts/market-trend";
 import { ButtonGroup, ButtonGroupItem } from "../ui/button-group";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { TabItem, Tabs } from "../ui/tabs";
 
 export const MarketTrends = () => (
 	<Card className="grid grid-rows-[auto_1fr_auto] col-span-8">
@@ -17,38 +18,46 @@ export const MarketTrends = () => (
 			</ButtonGroup>
 		</CardHeader>
 		<CardContent>
-			<div className="flex p-1 gap-2">
-				<button
-					type="button"
-					className="inline-flex justify-center items-center"
-				>
-					Market
-				</button>
-				<button
-					type="button"
-					className="inline-flex justify-center items-center"
-				>
-					Category
-				</button>
-				<button
-					type="button"
-					className="inline-flex justify-center items-center"
-				>
-					Products
-				</button>
-				<button
-					type="button"
-					className="inline-flex justify-center items-center"
-				>
-					Cross Selling
-				</button>
-				<button
-					type="button"
-					className="inline-flex justify-center items-center"
-				>
-					Geography
-				</button>
-			</div>
+			<Tabs>
+				<div className="flex p-1 bg-grey-50 border border-grey-200 rounded-lg gap-2">
+					<TabItem
+						className="inline-flex px-3 py-2 font-semibold text-sm bg-transparent text-grey-500 justify-center items-center"
+						activeClasses="bg-white border border-grey-900/10 text-grey-700 rounded-md"
+						index="market"
+						defaultTab
+					>
+						Market
+					</TabItem>
+					<TabItem
+						className="inline-flex px-3 py-2 font-semibold text-sm bg-transparent text-grey-500 justify-center items-center"
+						activeClasses="bg-white border border-grey-900/10 text-grey-700 rounded-md"
+						index="category"
+					>
+						Category
+					</TabItem>
+					<TabItem
+						className="inline-flex px-3 py-2 font-semibold text-sm bg-transparent text-grey-500 justify-center items-center"
+						activeClasses="bg-white border border-grey-900/10 text-grey-700 rounded-md"
+						index="products"
+					>
+						Products
+					</TabItem>
+					<TabItem
+						className="inline-flex px-3 py-2 font-semibold text-sm bg-transparent text-grey-500 justify-center items-center"
+						activeClasses="bg-white border border-grey-900/10 text-grey-700 rounded-md"
+						index="crossselling"
+					>
+						Cross Selling
+					</TabItem>
+					<TabItem
+						className="inline-flex px-3 py-2 font-semibold text-sm bg-transparent text-grey-500 justify-center items-center"
+						activeClasses="bg-white border border-grey-900/10 text-grey-700 rounded-md"
+						index="geography"
+					>
+						Geography
+					</TabItem>
+				</div>
+			</Tabs>
 			<MarketTrendsChart />
 		</CardContent>
 		<div className="flex py-3.5 px-4.5 bg-[#FFF8ED] items-center gap-5">

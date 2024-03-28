@@ -12,6 +12,10 @@ body {
     @apply w-full h-dvh bg-primary-800;
 }
 
+.wrapper {
+    @apply w-full min-h-dvh h-full pt-3 pl-23.5
+}
+
 /*** Nav ***/
 .nav {
     @apply flex flex-col items-center;
