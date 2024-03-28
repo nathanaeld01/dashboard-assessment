@@ -1,9 +1,13 @@
 import { useState } from "react";
 
 import { cn } from "../../lib/utils";
+import { AvgOrderCard } from "../dashcards/avg-order";
+import { MarketTrends } from "../dashcards/market-trends";
+import { OrdersCard } from "../dashcards/orders";
+import { RevenueCard } from "../dashcards/revenue";
+import { Card, CardHeader, CardTitle } from "../ui/card";
 import { TabContent, TabItem, Tabs } from "../ui/tabs";
 import { DashboardHeader } from "./header";
-import { DashboardMetrics } from "./metrics";
 
 export const Dashboard = () => {
 	const [currentTab, setCurrentTab] = useState("analysis");
@@ -14,7 +18,7 @@ export const Dashboard = () => {
 	];
 
 	return (
-		<div className="grow h-full pt-3 pl-3">
+		<div className="max-w-[calc(100%-5.125rem)] w-full h-full ml-20.5 pt-3 pl-3">
 			<main className="w-full h-full bg-background rounded-tl-4xl p-8">
 				<DashboardHeader />
 				<Tabs onChange={setCurrentTab}>
@@ -37,11 +41,24 @@ export const Dashboard = () => {
 							</TabItem>
 						))}
 					</div>
-					<TabContent
-						className="flex flex-col gap-4"
-						index="analysis"
-					>
-						<DashboardMetrics />
+					<TabContent index="analysis">
+						<div className="row-wrap">
+							<div className="col-wrap">
+								<RevenueCard />
+								<OrdersCard />
+								<AvgOrderCard />
+							</div>
+							<div className="col-wrap">
+								<MarketTrends />
+								<Card className="col-span-1">
+									<CardHeader bordered>
+										<CardTitle>
+											Industry Opportunities
+										</CardTitle>
+									</CardHeader>
+								</Card>
+							</div>
+						</div>
 					</TabContent>
 					<TabContent index="perform">
 						<div>Performance</div>
